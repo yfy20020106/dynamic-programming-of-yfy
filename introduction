@@ -9,4 +9,5 @@ We focus on the second method:
          For a problem, we define it as P,and P(i) is the optimal solution when the scale of the problem is i.
          And we know that the solution of P(i) is depends on smaller P's solutions,such as P(k)(k<i).Only when we get all the solutions that P(i) depends,
          we could get the P(i)'s soultion.We might as well write this process as P(i)=max(fun(p(k))(k<i,and the answer might be some satisfied k through some kind of operation (that is, some kind of function)).
-And now we will discuss how to find the properly way to plan the substructure and find the appropriate transfer equation.                            
+And now we will discuss how to find the properly way to plan the substructure and find the appropriate transfer equation. 
+1
