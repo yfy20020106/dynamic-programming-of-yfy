@@ -1,2 +1,4 @@
 # dynamic-programming-of-yfy
-personal mind
+Personal mind
+
+Continuously updated
