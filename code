@@ -1,0 +1,51 @@
+/*#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace  std;
+const int N = 2e5+10;
+int a[N];
+int main(){
+    ios::sync_with_stdio(0);
+
+    freopen("in.txt","r",stdin);
+    freopen("out.txt","w",stdout);
+    int t;
+    cin>>t;
+    while(t--){
+        int n,m;
+        long long res = 0;
+        cin>>n>>m;
+        int t =m;
+        vector<int>x,y;
+        for(int i = 0;i<n;++i)cin>>a[i];
+        for(int i = 0;i<n;++i){
+            int s;
+            cin>>s;
+            if(s==1)x.push_back(a[i]);
+            else y.push_back(a[i]);
+        }
+        sort(x.rbegin(),x.rend());
+        sort(y.rbegin(),y.rend());
+        long long sum = 0;
+        long long xsum=0;
+        for(auto i : y)sum+=i;
+        int r = (int)y.size();
+        int ans = INT_MAX;
+        for(int l = 0;l <= x.size();++l){
+            while(r>0&&xsum+sum-y[r-1]>=m){
+                r--;
+                sum-=y[r];
+            }
+            if(xsum+sum>=m)ans=min(ans,2*r+l);
+            if(l!=x.size()){
+                xsum+=x[l];
+            }
+        }
+
+        cout<<(ans == INT_MAX ? -1 : ans)<<"\n";
+    }
+
+    fclose (stdin);
+    fclose (stdout);
+    return 0;
+}*/
