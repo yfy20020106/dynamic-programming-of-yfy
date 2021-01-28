@@ -1,6 +1,6 @@
 ### This is my personal note when learning dynamic programming.
 ### (The reference is the *Introduction to Algorithms*)
-Dynamic programming:It's a method that could through combining subproblems(optimal substructure) to sovle optimization problem.
+Dynamic programming: It's a method that could through combining subproblems(optimal substructure) to sovle optimization problem.
 We can recursively solve some optimal substructures (usually top-down) or make state transition directly from bottom to top.
 But the former is very inefficient,both time and space.Because it solves many subproblems repeatedly.
 So we'd like to solve such problem by dynamic programming.We save computing time by spending extra space.This is a typical time-memory trade-off example.
